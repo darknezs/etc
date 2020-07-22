@@ -1,0 +1,47 @@
+//exception
+DECLARE
+BEGIN
+EXCEPTION
+	when zero_divide then
+		dbms_output.put_line('bob do something');
+END;
+
+
+//cursor v1.0
+DECLARE
+	cursor_detail IS
+	select * from emp;
+BEGIN
+	for cursor_list in cursor_detail
+	loop
+		dbms_output.put_line(cursor_list.empid);
+	end loop;
+END;
+
+//cursor v2.0
+Begin 
+	for cursor_list in (select * from emp)
+	loop
+		dbms_output.put_line(cursor_list.empid);
+	end loop;
+end;
+
+//procedure
+create procedure AAA(a number) IS
+BEGIN
+	insert into b values(a);
+END;
+
+//function
+create function BBB(b number) return number is
+BEGIN
+	return 100+b;
+END;
+
+//trigger
+create or replace trigger back_up
+	after delete or update of id on emp
+for each row
+BEGIN
+	insert into backupTable values(:old.id, :old.name);
+END;

@@ -1,0 +1,18 @@
+find /home -type f -iname user.txt
+find /home -type f -size -2k -name "*.txt"
+
+find / -type d -name "*exploits*"
+
+find / -type f -name "*.xml"
+find / -type f -user kittycat
+find / -type f -size 150c
+find / -type f -perm 644
+find / -type f -perm /444
+find / -type f -perm -o=w -name "*.sh"
+find / -type f -atime +10 -name "*.png"
+
+find /usr/bin -type f -mmin -120
+find /usr/bin -type f -user root -perm -u=s
+
+
+2>/dev/null

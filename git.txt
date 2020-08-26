@@ -1,0 +1,1 @@
+git log | grep commit | cut -d " " -f2 | xargs git show > git_detail.txt

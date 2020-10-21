@@ -24,3 +24,6 @@
 
 เพราะว่า จากข้อ 2 เป็นการเซต name ตัวเดียวกัน และ window.name เป็น global var ทั้ง 2 แท็บของเบาว์เซอร์เห็นเป็นตัวเดียวกัน <br>
 และ xss.html จะรับ value จากข้อ 2 ไป execute
+
+โค้ดจาก : https://www.youtube.com/watch?v=L1RvK1443Yw&ab_channel=LiveOverflow
+อยากเขียนเก็บเอาไว้

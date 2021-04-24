@@ -6,3 +6,6 @@ access-list not_allow_ftp extended permit tcp 192.168.1.0 255.255.255.0 host 150
 hatoru
 pikchuhatoru
 hatoru123
+a
+a
+a

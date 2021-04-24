@@ -3,3 +3,5 @@ access-list not_allow_ftp extended deny tcp any host 150.150.150.5
 access-list not_allow_ftp extended deny udp any host 150.150.150.5
 access-list not_allow_ftp extended permit tcp 192.168.1.0 255.255.255.0 host 150.150.150.5
 access-list not_allow_ftp extended permit tcp 192.168.1.0 255.255.255.0 host 150.150.150.5 eq ftp
+hatoru
+pikchu

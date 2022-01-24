@@ -6,9 +6,10 @@ import os
 '''
 
 os.makedirs('newsize')
-
+arr_img_ext = [".png",".PNG"]
 for filename in os.listdir("."):
-    if ".png" in filename or ".PNG" in filename:
+    # if ".png" in filename or ".PNG" in filename:
+    if filename[-4:] in arr_img_ext:
         img = cv2.imread(str(filename), cv2.IMREAD_UNCHANGED)
 
         width = 750
